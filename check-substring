@@ -1,0 +1,17 @@
+const str = "asefgcvxnjhf"
+const subStr = "cxv"
+
+
+function checkSubstring(main, sub){
+  
+  let index = main.indexOf(sub[0])
+  let word = []
+  
+  for (var i = 0; i < sub.length; i++) {
+    console.log(main[i+index])
+    word.push(main[i+index])
+    
+  }
+  return word.join("") == sub?true:false
+}
+console.log(checkSubstring(str, subStr))
